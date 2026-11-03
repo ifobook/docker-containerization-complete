@@ -1,0 +1,52 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 363B done
+#1 DONE 0.0s
+
+#2 resolve image config for docker-image://docker.io/docker/dockerfile:1
+#2 DONE 1.0s
+
+#3 docker-image://docker.io/docker/dockerfile:1@sha256:4edf897a3ffa55b89f906fc8cc78afdb3f1834cc9c7083565e611a8a7d5fe99e
+#3 resolve docker.io/docker/dockerfile:1@sha256:4edf897a3ffa55b89f906fc8cc78afdb3f1834cc9c7083565e611a8a7d5fe99e done
+#3 CACHED
+
+#4 [internal] load metadata for docker.io/library/python:3.12-alpine
+#4 DONE 1.0s
+
+#5 [internal] load .dockerignore
+#5 transferring context: 110B done
+#5 DONE 0.0s
+
+#6 [1/6] FROM docker.io/library/python:3.12-alpine@sha256:e6dae589c1c05976188fd3bd019afd091445fc533ed2ea29001beddc7368a9c8
+#6 resolve docker.io/library/python:3.12-alpine@sha256:e6dae589c1c05976188fd3bd019afd091445fc533ed2ea29001beddc7368a9c8 done
+#6 DONE 0.0s
+
+#7 [internal] load build context
+#7 transferring context: 63B done
+#7 DONE 0.0s
+
+#8 [2/6] WORKDIR /app
+#8 CACHED
+
+#9 [4/6] RUN pip install --no-cache-dir -r requirements.txt
+#9 CACHED
+
+#10 [3/6] COPY requirements.txt .
+#10 CACHED
+
+#11 [5/6] COPY app.py .
+#11 CACHED
+
+#12 [6/6] RUN addgroup -S appgroup &&     adduser -S appuser -G appgroup
+#12 CACHED
+
+#13 exporting to image
+#13 exporting layers done
+#13 exporting manifest sha256:97d0dfd7f0874e62b2e592976bd889ec54a0c0a07a4a8d133f678c5b1254db3c done
+#13 exporting config sha256:3cd642ff93e3ad7bc90fda1c63cc4b0b7ad6118d629c7df19d0bc3c8447ec26e done
+#13 exporting attestation manifest sha256:9a42f96ea2f4ed47cdde1f6f90fd5bcce4f60f00290d39d67691ffdd56df62ee done
+#13 exporting manifest list sha256:bb112b988779f28f314fced27949b9daf08b45a240e4aa2976549d0a6c69f95e done
+#13 naming to docker.io/library/flask-docker-app:v1 done
+#13 unpacking to docker.io/library/flask-docker-app:v1 done
+#13 DONE 0.0s

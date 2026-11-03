@@ -1,0 +1,8 @@
+test_health_endpoint (test_app.FlaskApplicationTests.test_health_endpoint) ... ok
+test_homepage (test_app.FlaskApplicationTests.test_homepage) ... ok
+test_unknown_route (test_app.FlaskApplicationTests.test_unknown_route) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.017s
+
+OK

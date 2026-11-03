@@ -1,0 +1,20 @@
+IMAGE          CREATED        CREATED BY                                      SIZE      COMMENT
+bb112b988779   25 hours ago   CMD ["gunicorn" "--bind" "0.0.0.0:5000" "--w…   0B        buildkit.dockerfile.v0
+<missing>      25 hours ago   EXPOSE [5000/tcp]                               0B        buildkit.dockerfile.v0
+<missing>      25 hours ago   USER appuser                                    0B        buildkit.dockerfile.v0
+<missing>      25 hours ago   RUN /bin/sh -c addgroup -S appgroup &&     a…   41kB      buildkit.dockerfile.v0
+<missing>      25 hours ago   COPY app.py . # buildkit                        12.3kB    buildkit.dockerfile.v0
+<missing>      25 hours ago   RUN /bin/sh -c pip install --no-cache-dir -r…   17.4MB    buildkit.dockerfile.v0
+<missing>      25 hours ago   COPY requirements.txt . # buildkit              12.3kB    buildkit.dockerfile.v0
+<missing>      25 hours ago   WORKDIR /app                                    8.19kB    buildkit.dockerfile.v0
+<missing>      7 days ago     CMD ["python3"]                                 0B        buildkit.dockerfile.v0
+<missing>      7 days ago     RUN /bin/sh -c set -eux;  for src in idle3 p…   16.4kB    buildkit.dockerfile.v0
+<missing>      7 days ago     RUN /bin/sh -c set -eux;   apk add --no-cach…   48.1MB    buildkit.dockerfile.v0
+<missing>      7 days ago     ENV PYTHON_SHA256=b5796915dc45ff745cfb4e990a…   0B        buildkit.dockerfile.v0
+<missing>      7 days ago     ENV PYTHON_VERSION=3.12.16                      0B        buildkit.dockerfile.v0
+<missing>      7 days ago     ENV GPG_KEY=7169605F62C751356D054A26A821E680…   0B        buildkit.dockerfile.v0
+<missing>      7 days ago     RUN /bin/sh -c set -eux;  apk add --no-cache…   2.91MB    buildkit.dockerfile.v0
+<missing>      7 days ago     ENV LANG=C.UTF-8                                0B        buildkit.dockerfile.v0
+<missing>      7 days ago     ENV PATH=/usr/local/bin:/usr/local/sbin:/usr…   0B        buildkit.dockerfile.v0
+<missing>      12 days ago    CMD ["/bin/sh"]                                 0B        buildkit.dockerfile.v0
+<missing>      12 days ago    ADD alpine-minirootfs-3.24.3-aarch64.tar.gz …   9.31MB    buildkit.dockerfile.v0

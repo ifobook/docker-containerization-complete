@@ -1,0 +1,2 @@
+CONTAINER ID   IMAGE                 COMMAND                  CREATED         STATUS         PORTS                      NAMES
+da1aa68b1d87   flask-docker-app:v1   "gunicorn --bind 0.0…"   3 seconds ago   Up 3 seconds   127.0.0.1:8081->5000/tcp   flask-verification
